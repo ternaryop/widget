@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.ternaryop.widget.ClickableTextView">
+        <attr name="topClickedColor" format="color"/>
+        <attr name="topClickedBackground" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="com.ternaryop.widget.CheckableImageView">
+        <attr name="topCheckedColorFilter" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="com.ternaryop.widget.WaitingResultSwipeRefreshLayout">
+        <attr name="topColorScheme" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -27,7 +27,7 @@ buildscript {
             version: '1.0.0',
             groupId: 'com.ternaryop',
             artifactId: 'widget',
-            bintrayRepoName: 'Widget',
+            bintrayRepoName: 'CommonUtils',
             desc: 'Widget for checkbox, swipe and more',
             website: 'https://github.com/ternaryop/widget'
     ]

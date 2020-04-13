@@ -24,7 +24,7 @@ buildscript {
     }
 
     ext.publishPackage = [
-            version: '1.0.0',
+            version: '1.0.1',
             groupId: 'com.ternaryop',
             artifactId: 'widget',
             bintrayRepoName: 'CommonUtils',
@@ -38,7 +38,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'com.android.tools.build:gradle:3.6.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         classpath "com.novoda:bintray-release:$novaBintrayReleaseLibVersion"

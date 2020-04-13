@@ -23,12 +23,14 @@ class ClickableImageView : AppCompatImageView {
      * @param pressed true if pressed, false otherwise
      */
     override fun setPressed(pressed: Boolean) {
-        if (pressed) {
-            drawable.srcAtop(DEFAULT_PRESSED_COLOR)
-            invalidate()
-        } else {
-            drawable.clearColorFilter()
-            invalidate()
+        drawable?.apply {
+            if (pressed) {
+                srcAtop(DEFAULT_PRESSED_COLOR)
+                invalidate()
+            } else {
+                clearColorFilter()
+                invalidate()
+            }
         }
         super.setPressed(pressed)
     }

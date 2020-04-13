@@ -38,10 +38,12 @@ class CheckableImageView : AppCompatImageView, Checkable {
 
     override fun setChecked(checked: Boolean) {
         isChecked = checked
-        if (checked) {
-            drawable.srcAtop(checkedColorFilter)
-        } else {
-            drawable.colorFilter = null
+        drawable?.apply {
+            if (checked) {
+                srcAtop(checkedColorFilter)
+            } else {
+                colorFilter = null
+            }
         }
     }
 

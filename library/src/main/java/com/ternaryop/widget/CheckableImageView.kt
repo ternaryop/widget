@@ -61,13 +61,15 @@ class CheckableImageView : AppCompatImageView, Checkable {
      * @param pressed true if pressed, false otherwise
      */
     override fun setPressed(pressed: Boolean) {
-        if (!isChecked()) {
-            if (pressed) {
-                drawable.srcAtop(DEFAULT_PRESSED_COLOR)
-                invalidate()
-            } else {
-                drawable.clearColorFilter()
-                invalidate()
+        drawable?.apply {
+            if (!isChecked()) {
+                if (pressed) {
+                    drawable.srcAtop(DEFAULT_PRESSED_COLOR)
+                    invalidate()
+                } else {
+                    drawable.clearColorFilter()
+                    invalidate()
+                }
             }
         }
         super.setPressed(pressed)

@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 
-class ClickableImageView : AppCompatImageView {
+open class ClickableImageView : AppCompatImageView {
     constructor(context: Context, attrs: AttributeSet,
         defStyle: Int) : super(context, attrs, defStyle) {
     }

@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.widget.Checkable
 import androidx.appcompat.widget.AppCompatImageView
 
-class CheckableImageView : AppCompatImageView, Checkable {
+open class CheckableImageView : AppCompatImageView, Checkable {
     private var isChecked: Boolean = false
     private var checkedColorFilter: Int = 0
 

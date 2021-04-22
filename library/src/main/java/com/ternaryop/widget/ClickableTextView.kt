@@ -10,7 +10,7 @@ import android.view.View
 import android.view.View.OnTouchListener
 import androidx.appcompat.widget.AppCompatTextView
 
-class ClickableTextView : AppCompatTextView, OnTouchListener {
+open class ClickableTextView : AppCompatTextView, OnTouchListener {
     private var defaultColor: Int = 0
     private var defaultBackground: Drawable? = null
     private var defaultBackgroundColor: Int = 0

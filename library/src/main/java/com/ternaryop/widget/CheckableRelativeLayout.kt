@@ -12,7 +12,7 @@ import android.widget.RelativeLayout
  *
  * @author dave
  */
-class CheckableRelativeLayout : RelativeLayout, Checkable {
+open class CheckableRelativeLayout : RelativeLayout, Checkable {
     private var isChecked: Boolean = false
     private var checkableViews = mutableListOf<Checkable>()
 

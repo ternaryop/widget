@@ -8,8 +8,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName VERSION_NAME
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -21,13 +19,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.ternaryop.widget'
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api "androidx.preference:preference:${androidXPreferenceLibVersion}"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidXAppCompatLibVersion}"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:${rootProject.ext.androidXSwiperefreshlayoutLibVersion}"
 
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:${rootProject.ext.kotlinxCoroutinesCore}"
 

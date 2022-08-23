@@ -6,8 +6,7 @@ import androidx.appcompat.widget.AppCompatImageView
 
 open class ClickableImageView : AppCompatImageView {
     constructor(context: Context, attrs: AttributeSet,
-        defStyle: Int) : super(context, attrs, defStyle) {
-    }
+        defStyle: Int) : super(context, attrs, defStyle)
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 

@@ -27,7 +27,8 @@ open class WaitingResultSwipeRefreshLayout : SwipeRefreshLayout {
         val a = context.theme.obtainStyledAttributes(attrs,
             R.styleable.com_ternaryop_widget_WaitingResultSwipeRefreshLayout, 0, 0)
         try {
-            val colorSchemeId = a.getResourceId(R.styleable.com_ternaryop_widget_WaitingResultSwipeRefreshLayout_topColorScheme, 0)
+            val colorSchemeId = a.getResourceId(
+                R.styleable.com_ternaryop_widget_WaitingResultSwipeRefreshLayout_topColorScheme, 0)
             if (colorSchemeId != 0) {
                 setColorScheme(colorSchemeId)
             }
@@ -36,6 +37,7 @@ open class WaitingResultSwipeRefreshLayout : SwipeRefreshLayout {
         }
     }
 
+    @Suppress("ResourceType", "MagicNumber")
     fun setColorScheme(arrayResId: Int) {
         val colorScheme = resources.obtainTypedArray(arrayResId)
         setColorSchemeResources(
